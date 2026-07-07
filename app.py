@@ -66,9 +66,7 @@ def main():
                 top_label, top_conf = ranked[0]
                 st.subheader(f"Predicted class: **{top_label}**  ({top_conf:.1%} confidence)")
 
-                df = pd.DataFrame(ranked, columns=["Class", "Probability"]).set_index("Class")
-                st.bar_chart(df)
-
+                for label, prob in ranked: st.write(f"{label} - {prob:.1%}"); st.progress(min(max(prob, 0.0), 1.0))
                 st.session_state.history.append(
                     {"text": text, "prediction": top_label, "confidence": f"{top_conf:.1%}"}
                 )
