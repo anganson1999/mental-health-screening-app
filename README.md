@@ -20,7 +20,7 @@ app.py                      Streamlit app (loads the model + serves the UI)
 requirements.txt            Python dependencies
 mental_health_bert_model/   Fine-tuned BERT weights, tokenizer, and config (tracked with Git LFS)
 notebooks/                  Training / model-comparison notebooks
-docs/                       Slides and proposal/report documents
+
 ```
 
 ## Run locally
