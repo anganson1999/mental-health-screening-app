@@ -42,3 +42,8 @@ directly to this GitHub repo (`main` branch, `app.py` entry point).
 
 This app is an academic prototype / screening-support demo only. It is **not**
 a medical diagnosis tool and should not replace professional mental health care.
+
+
+## Data source
+
+The fine-tuning dataset used for this project's BERT model is the [Mental_Health_Condition_Classification](https://huggingface.co/datasets/sai1908/Mental_Health_Condition_Classification) dataset, published on Hugging Face by sai1908. Credit to the original author for compiling and sharing this dataset.
